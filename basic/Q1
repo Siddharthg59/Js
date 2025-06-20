@@ -22,5 +22,5 @@ function showDateTime() {
   console.log(`Current time is : ${hours} ${ampm} : ${minutes} : ${seconds}`);
 }
 
-showDateTime();
+showDateTime(); 
 
