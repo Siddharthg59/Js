@@ -1,0 +1,13 @@
+let str = 'w3resource';
+let original = str;
+let count = 0;
+
+let intervalId = setInterval(() => {
+  str = str.slice(-1) + str.slice(0, -1);  // Rotate right
+  console.log(str);
+  count++;
+
+  if (count === original.length) {
+    clearInterval(intervalId);  // Stop after one full rotation
+  }
+}, 1000);  // Rotate every 1 second
