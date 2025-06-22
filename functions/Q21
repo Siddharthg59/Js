@@ -1,0 +1,21 @@
+function subsets(arr, size) {
+  let result = [];
+
+  function combine(temp, start) {
+    if (temp.length === size) {
+      result.push([...temp]);
+      return;
+    }
+    for (let i = start; i < arr.length; i++) {
+      temp.push(arr[i]);
+      combine(temp, i + 1);
+      temp.pop();
+    }
+  }
+
+  combine([], 0);
+  return result;
+}
+
+console.log(subsets([1, 2, 3], 2));
+// Output: [[1,2],[1,3],[2,3]]
