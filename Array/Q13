@@ -1,0 +1,4 @@
+let arr = [];
+arr.push("item1");
+arr.push("item2");
+console.log(arr);
