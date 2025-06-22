@@ -1,0 +1,5 @@
+for (let i = 100; i < 1000; i++) {
+  const digits = i.toString().split('').map(Number);
+  const sum = digits.reduce((acc, d) => acc + d ** 3, 0);
+  if (sum === i) console.log(i);
+}
