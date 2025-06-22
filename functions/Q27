@@ -1,0 +1,15 @@
+function longestPalindrome(str) {
+  let max = "";
+
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j <= str.length; j++) {
+      let sub = str.slice(i, j);
+      if (sub === sub.split('').reverse().join('') && sub.length > max.length) {
+        max = sub;
+      }
+    }
+  }
+  return max;
+}
+
+console.log(longestPalindrome("bananas")); // "anana"
