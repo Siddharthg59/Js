@@ -1,0 +1,5 @@
+function countLetter(str, letter) {
+  return str.split(letter).length - 1;
+}
+
+console.log(countLetter("w3resource.com", "o")); // 2
