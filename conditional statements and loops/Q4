@@ -1,0 +1,6 @@
+function findLargest(a, b, c, d, e) {
+  const max = Math.max(a, b, c, d, e);
+  alert(`Largest number is ${max}`);
+}
+
+findLargest(-5, -2, -6, 0, -1); // 0
