@@ -1,0 +1,4 @@
+function isLeapYear(year) {
+  return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0); // Leap year logic.
+}
+console.log(isLeapYear(2024)); // Call function with 2024; returns true.
