@@ -1,0 +1,12 @@
+function mostFrequent(arr) {
+  let freq = {}, max = 0, result;
+  for (let item of arr) {
+    freq[item] = (freq[item] || 0) + 1;
+    if (freq[item] > max) {
+      max = freq[item];
+      result = item;
+    }
+  }
+  return `${result} (${max} times)`;
+}
+console.log(mostFrequent([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]));
