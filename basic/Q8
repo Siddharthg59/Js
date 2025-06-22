@@ -1,0 +1,3 @@
+const num = Math.floor(Math.random() * 10) + 1;
+const guess = parseInt(prompt("Guess the number between 1 and 10"));
+console.log(guess === num ? "Good Work" : "Not matched");
