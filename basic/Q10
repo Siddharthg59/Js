@@ -1,0 +1,19 @@
+<form id="calcForm">
+  <input type="number" id="num1" placeholder="First number">
+  <input type="number" id="num2" placeholder="Second number">
+  <button type="button" onclick="calc()">Calculate</button>
+</form>
+
+<script>
+  function calc() {
+    const a = parseFloat(document.getElementById('num1').value); // Get first number.
+    const b = parseFloat(document.getElementById('num2').value); // Get second number.
+
+    if (!isNaN(a) && !isNaN(b)) {
+      console.log("Multiplication: " + (a * b)); // Multiply and show result.
+      console.log("Division: " + (a / b)); // Divide and show result.
+    } else {
+      console.log("Please enter valid numbers."); // Error message.
+    }
+  }
+</script>
