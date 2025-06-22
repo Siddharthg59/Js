@@ -1,0 +1,4 @@
+function flattenOnce(arr) {
+  return arr.reduce((flat, val) => flat.concat(val), []);
+}
+console.log(flattenOnce([1, [2, 3], [4, 5]])); // [1, 2, 3, 4, 5]
