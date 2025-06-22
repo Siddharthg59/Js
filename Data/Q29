@@ -1,0 +1,3 @@
+function secondsUntilTomorrow() {
+  return 86400 - secondsToday();
+}
