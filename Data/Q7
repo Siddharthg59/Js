@@ -1,0 +1,4 @@
+function is_weekend(dateStr) {
+  const date = new Date(dateStr);
+  return (date.getDay() === 0 || date.getDay() === 6) ? "weekend" : "weekday";
+}
