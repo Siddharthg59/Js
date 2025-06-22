@@ -1,0 +1,4 @@
+function cleanArray(arr) {
+  return arr.filter(Boolean);
+}
+console.log(cleanArray([0, "hello", false, 42, "", undefined, NaN, "world"]));
