@@ -1,0 +1,5 @@
+function allNumbers(arr) {
+  return arr.every(x => typeof x === 'number' && !isNaN(x));
+}
+console.log(allNumbers([1, 2, 3]));       // true
+console.log(allNumbers([1, "2", 3]));     // false
