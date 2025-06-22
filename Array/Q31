@@ -1,0 +1,4 @@
+function maxInArray(arr) {
+  return Math.max(...arr);
+}
+console.log(maxInArray([1, 7, 3])); // 7
