@@ -1,0 +1,6 @@
+function signOfProduct(x, y, z) {
+  const product = x * y * z;
+  alert(`The sign is ${product >= 0 ? "+" : "-"}`);
+}
+
+signOfProduct(3, -7, 2); // The sign is -
