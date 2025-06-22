@@ -1,0 +1,6 @@
+function power(base, exp) {
+  if (exp === 0) return 1;                      // Base case
+  return base * power(base, exp - 1);           // Recursive multiplication
+}
+
+console.log(power(8, 2)); // 64
