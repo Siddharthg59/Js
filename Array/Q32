@@ -1,0 +1,4 @@
+function minInArray(arr) {
+  return Math.min(...arr);
+}
+console.log(minInArray([1, 7, 3])); // 1
