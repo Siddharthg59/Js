@@ -1,0 +1,11 @@
+function getDatesBetween(startDate, endDate) {
+  let dateArray = [];
+  let current = new Date(startDate);
+
+  while (current <= new Date(endDate)) {
+    dateArray.push(new Date(current));
+    current.setDate(current.getDate() + 1);
+  }
+
+  return dateArray;
+}
