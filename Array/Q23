@@ -1,0 +1,9 @@
+function findDuplicates(arr) {
+  let seen = new Set(), dupes = new Set();
+  for (let val of arr) {
+    if (seen.has(val)) dupes.add(val);
+    seen.add(val);
+  }
+  return Array.from(dupes);
+}
+console.log(findDuplicates([1, 2, 3, 2, 3, 4]));
