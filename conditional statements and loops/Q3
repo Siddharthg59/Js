@@ -1,0 +1,7 @@
+function sortThree(a, b, c) {
+  const arr = [a, b, c];
+  arr.sort((x, y) => y - x);
+  alert(arr.join(", "));
+}
+
+sortThree(0, -1, 4); // 4, 0, -1
