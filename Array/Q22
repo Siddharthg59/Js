@@ -1,0 +1,5 @@
+function elementsBefore(arr, val) {
+  let index = arr.indexOf(val);
+  return index > -1 ? arr.slice(0, index) : [];
+}
+console.log(elementsBefore([1, 2, 3, 4, 5], 4)); // [1, 2, 3]
