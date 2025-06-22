@@ -1,0 +1,5 @@
+function largerThan(arr, num) {
+  return arr.filter(x => x > num);
+}
+
+console.log(largerThan([10, 5, 8, 2, 15], 7)); // [10, 8, 15]
