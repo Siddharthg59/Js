@@ -1,0 +1,5 @@
+function nthLargest(arr, n) {
+  let sorted = [...new Set(arr)].sort((a, b) => b - a);
+  return sorted[n - 1];
+}
+console.log(nthLargest([1, 2, 3, 4, 5], 2)); // 4
