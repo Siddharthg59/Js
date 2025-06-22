@@ -1,0 +1,4 @@
+function removeValues(arr, ...values) {
+  return arr.filter(x => !values.includes(x));
+}
+console.log(removeValues([1, 2, 3, 4], 2, 3)); // [1, 4]
