@@ -1,0 +1,4 @@
+function everyNth(arr, n) {
+  return arr.filter((_, index) => (index + 1) % n === 0);
+}
+console.log(everyNth([1, 2, 3, 4, 5, 6], 2)); // [2, 4, 6]
