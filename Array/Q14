@@ -1,0 +1,13 @@
+function removeDuplicates(arr) {
+  let unique = [];
+  let lower = new Set();
+  for (let item of arr) {
+    let lowerItem = item.toLowerCase();
+    if (!lower.has(lowerItem)) {
+      lower.add(lowerItem);
+      unique.push(item);
+    }
+  }
+  return unique;
+}
+console.log(removeDuplicates(["Apple", "Banana", "apple", "BANANA", "Cherry"]));
