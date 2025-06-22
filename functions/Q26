@@ -1,0 +1,19 @@
+function longestUniqueSubstring(str) {
+  let seen = {};
+  let start = 0, maxLength = 0, longest = "";
+
+  for (let end = 0; end < str.length; end++) {
+    let char = str[end];
+    if (seen[char] !== undefined && seen[char] >= start) {
+      start = seen[char] + 1;
+    }
+    seen[char] = end;
+    if (end - start + 1 > maxLength) {
+      maxLength = end - start + 1;
+      longest = str.slice(start, end + 1);
+    }
+  }
+  return longest;
+}
+
+console.log(longestUniqueSubstring("abcabcbb")); // "abc"
