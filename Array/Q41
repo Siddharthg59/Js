@@ -1,0 +1,4 @@
+function randomItem(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+console.log(randomItem(["a", "b", "c"])); // random letter
