@@ -1,0 +1,9 @@
+function sumAndProduct(arr) {
+  let sum = 0, product = 1;
+  for (let num of arr) {
+    sum += num;
+    product *= num;
+  }
+  return { sum, product };
+}
+console.log(sumAndProduct([1, 2, 3, 4]));
